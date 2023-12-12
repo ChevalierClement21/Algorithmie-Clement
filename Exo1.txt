@@ -3,8 +3,8 @@ Var mot:Chaine de caractère MotDePasse:Chaine de caractère
 
 
 Fonction MotEnEtoile(mot): Chaine de caractère: MotDePasse:Chaine de caractère
-    MotDePasse = 0
-    Pour i allant de 0 à longueur(mot) +1:
+    MotDePasse = ''
+    Pour i allant de 0 à longueur(mot) :
         MotDePasse += '*'
     Fin Pour
     Retourner MotDePasse
