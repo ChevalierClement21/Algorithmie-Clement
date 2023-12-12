@@ -1,4 +1,4 @@
-Var nb,resultat,somme: integer
+Var nb,resultat,somme,index1,index2: integer
 Var Tab : Tableau
 Début
     Tab = []
