@@ -1,0 +1,15 @@
+Var mot:Chaine de caractère
+
+
+
+Fonction MotEn*(mot): Chaine de caractère: MotDePasse:Chaine de caractère
+    Pour i allant de 0 à longueur(mot) +1:
+        MotDePasse += '*'
+    Fin Pour
+    Retourner MotDePasse
+
+Début
+    Afficher('Entrez votre mot')
+    Recuperer (mot)
+    Afficher (MotEn*(mot))
+Fin
