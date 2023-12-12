@@ -8,7 +8,11 @@ Fonction ComptageLettre(mot:Text):Tab:tableau
         i+=1
         Afficher("Ecrivez un mot de votre choix pour arrêter ecrivez STOP")
         Recuperer mot
-    Fin tant que
+    Fin tant que    
+    Pour j allant de 0 a i:
+        Afficher(Tab[j])
+    Fin pour
+    
     Retourner Tab
 
 Début
@@ -17,7 +21,5 @@ Début
     Afficher("Ecrivez un mot de votre choix pour arrêter ecrivez STOP")
     Recuperer mot
     ComptageLettre(mot)
-    Pour j allant de 0 a i:
-        Afficher(Tab[j])
-    Fin pour
+    
 Fin
