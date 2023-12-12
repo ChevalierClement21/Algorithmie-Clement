@@ -1,4 +1,4 @@
-Var i:integer 
+Var i, j:integer 
 Tab:Tableau
 
 Fonction ComptageLettre(mot:Text):Tab:tableau
