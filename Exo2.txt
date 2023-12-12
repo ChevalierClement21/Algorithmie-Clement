@@ -1,0 +1,19 @@
+Var i:integer Tab:Tableau
+
+Fonction ComptageLettre(mot:Text):Tab:tableau
+    
+    Tant que mot != 'STOP'
+        Tab[i] = longueur(mot)
+        i+=1
+        Afficher("Ecrivez un mot de votre choix pour arrêter ecrivez STOP")
+        Recuperer mot
+    Retourner Tab
+
+
+Début
+    Tab = []
+    i = 0
+    Afficher("Ecrivez un mot de votre choix pour arrêter ecrivez STOP")
+    Recuperer mot
+    Afficher ComptageLettre(motl)
+    
