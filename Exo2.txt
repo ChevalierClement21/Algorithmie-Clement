@@ -8,13 +8,16 @@ Fonction ComptageLettre(mot:Text):Tab:tableau
         i+=1
         Afficher("Ecrivez un mot de votre choix pour arrêter ecrivez STOP")
         Recuperer mot
+    Fin tant que
     Retourner Tab
-
 
 Début
     Tab = []
     i = 0
     Afficher("Ecrivez un mot de votre choix pour arrêter ecrivez STOP")
     Recuperer mot
-    Afficher ComptageLettre(motl)
-    
+    ComptageLettre(mot)
+    Pour j allant de 0 a i:
+        Afficher(Tab[j])
+    Fin pour
+Fin
