@@ -1,5 +1,3 @@
-Tab = []
-i = 0
 
 def comptageLettre (mot):
     Tab = []
