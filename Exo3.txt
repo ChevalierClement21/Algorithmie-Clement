@@ -3,14 +3,14 @@ Var Tab : Tableau
 Début
     Tab = []
     resultat = 0
+    i = 0
     Afficher('Ecrire un entier')
     Recuperer nb
     verificationINT(mot)
     Tant que nb !=0 ou resultat <=100:
-        Tab.append nb
+        Tab[i] = nb
+        i += 1
         resultat += nb
-        Si resultat > 100:
-            Alors sorir de la boucle
         Afficher('Ecricre un entier')
         Recuperer nb
         verificationINT(mot)
@@ -18,12 +18,12 @@ Début
     Afficher index()
 Fin
     
-Fonction verificationINT (mot:Entier)
-    Tant que mot != Entier
+Fonction verificationINT (nb:Entier)
+    Tant que nb is not Entier
         Afficher ("Entrez un nombre correct ")
-        Recuperer (mot)
+        Recuperer (nb)
     Fin tant que
-    Retourner mot
+    Retourner nb
 Fin
 
 Fonction index ():Entier
