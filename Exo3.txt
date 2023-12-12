@@ -8,10 +8,12 @@ Début
     verificationINT(mot)
     Tant que nb !=0 ou resultat <=100:
         Tab.append nb
+        resultat += nb
+        Si resultat > 100:
+            Alors sorir de la boucle
         Afficher('Ecricre un entier')
         Recuperer nb
         verificationINT(mot)
-        resultat += nb
     Fin tant que
     Afficher index()
 Fin
