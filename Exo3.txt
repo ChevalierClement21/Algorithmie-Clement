@@ -1,0 +1,32 @@
+Var nb,resultat: integer
+Var Tab : Tableau
+Début
+    Tab = []
+    resultat = 0
+    Afficher('Ecrire un entier')
+    Recuperer nb
+    verificationINT(mot)
+    Tant que nb !=0 ou resultat <=100:
+        Afficher('Ecricre un entier')
+        Recuperer nb
+        verificationINT(mot)
+        resultat += nb
+    Fin tant que
+    Afficher ("Ecrire un entier pour le premier index")
+    Recuperer index1
+    verificationINT(index1)
+    Tab[1] = index1
+
+    Afficher ("Ecrire un entier pour le deuxieme index")
+    Recuperer index2
+    verificationINT(index2)
+    Tab[2] = index2
+
+    Afficher (Tab[1] + Tab[2])
+    
+Fonction verificationINT (mot:Entier)
+    Tant que mot != Entier
+        Afficher ("Entrez un nombre correct ")
+        Recuperer (mot)
+    Fin tant que
+    Retourner mot
