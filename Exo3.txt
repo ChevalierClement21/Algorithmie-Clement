@@ -6,14 +6,14 @@ Début
     i = 0
     Afficher('Ecrire un entier')
     Recuperer nb
-    verificationINT(mot)
+    verificationINT(nb)
     Tant que nb !=0 ou resultat <=100:
         Tab[i] = nb
         i += 1
         resultat += nb
         Afficher('Ecricre un entier')
         Recuperer nb
-        verificationINT(mot)
+        verificationINT(nb)
     Fin tant que
     Afficher index()
 Fin
