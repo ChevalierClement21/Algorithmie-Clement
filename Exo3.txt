@@ -6,14 +6,14 @@ Début
     i = 0
     Afficher('Ecrire un entier')
     Recuperer nb
-    verificationINT(nb)
+    nb = verificationINT(nb)
     Tant que nb !=0 ou resultat <=100:
         Tab[i] = nb
         i += 1
         resultat += nb
         Afficher('Ecricre un entier')
         Recuperer nb
-        verificationINT(nb)
+        nb = verificationINT(nb)
     Fin tant que
     Afficher index()
 Fin
@@ -30,11 +30,11 @@ Fonction index ():Entier
     somme = 0
     Afficher ("Ecrire un entier pour le deuxieme index")
     Recuperer index2
-    verificationINT(index2)
+    index2 = verificationINT(index2)
     while index1 > longueur(Tab)
         Afficher ("Ecrire un entier pour le deuxieme index")
         Recuperer index2
-        verificationINT(index2)
+        index2 = verificationINT(index2)
     Fin tant que
     Afficher ("Ecrire un entier pour le premier index")
     Recuperer index1
@@ -42,7 +42,7 @@ Fonction index ():Entier
     while index1 > longueur(Tab)
         Afficher ("Ecrire un entier pour le premier index")
         Recuperer index1
-        verificationINT(index1)
+        index1 = verificationINT(index1)
     Fin tant que
     somme = Tab[index1] + Tab[index2]
     Retourner somme
