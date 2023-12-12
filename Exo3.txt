@@ -1,6 +1,7 @@
 Var nb,resultat,somme,index1,index2: integer
 Var Tab : Tableau
 Début
+    Tab = []
     resultat = 0
     i = 0
     Afficher('Ecrire un entier')
