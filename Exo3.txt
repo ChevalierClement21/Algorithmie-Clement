@@ -13,6 +13,7 @@ Début
         verificationINT(mot)
         resultat += nb
     Fin tant que
+    Afficher index()
 Fin
     
 Fonction verificationINT (mot:Entier)
